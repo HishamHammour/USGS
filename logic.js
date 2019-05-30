@@ -25,8 +25,8 @@ function createFeatures(earthquakeData) {
       const geojsonMarkerOptions = {
         radius: 5 * feature.properties.mag,
         fillColor: getColor(feature.properties.mag),
-        weight: 0.5,
-        fillOpacity: 0.65
+        weight: 0.2,
+        fillOpacity: 0.85
       };
       return L.circleMarker(latlng, geojsonMarkerOptions)
     }
